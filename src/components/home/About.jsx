@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
 
-import hemp1 from "@/assets/images/landing/hemp2.jpg";
+import hemp1 from "@/assets/images/landing/hemp.jpg";
 import hemp4 from "@/assets/images/landing/hemp2.jpg";
 // import pressMachineVideo from "@/assets/images/landing/ggcblock.mp4";
 
@@ -88,7 +88,7 @@ const About = () => {
             />
           </div>
         </div>
-        
+
 
         {/* CTA */}
         <div className="text-center mt-16">
