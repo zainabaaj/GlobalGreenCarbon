@@ -33,7 +33,7 @@ const ContactUs = () => {
             Partner With Us for a Greener Future
           </h2>
           <p className="mt-5 text-lg text-gray-700 dark:text-gray-300">
-            Whether you're an industry leader, investor, innovator, or simply
+            Whether you&rsquo;re an industry leader, investor, innovator, or simply
             someone passionate about sustainability — we want to hear from you.
             Reach out today to explore how Global Green Carbon can help drive
             your carbon-negative initiatives.
