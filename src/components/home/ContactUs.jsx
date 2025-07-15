@@ -22,7 +22,7 @@ const ContactUs = () => {
   });
 
   return (
-    <section id="contact" className="py-20 bg-[#f9f5f0] dark:bg-gray-950">
+    <section id="Contact Us" className="py-20 bg-[#f9f5f0] dark:bg-gray-950">
       <div className="container">
         {/* Section Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">

@@ -56,7 +56,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="bg-[#f9f5f0] dark:bg-gray-950 py-20">
+    <section id="Products" className="bg-[#f9f5f0] dark:bg-gray-950 py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
