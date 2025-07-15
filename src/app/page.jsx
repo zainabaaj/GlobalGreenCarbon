@@ -11,7 +11,10 @@ import {
 
 } from "@/components/home";
 import ContactUs from "@/components/home/ContactUs";
+import HeroAbout from "@/components/home/HeroAbout";
+import HeroWhyUs from "@/components/home/HeroWhyUs";
 import Products from "@/components/home/Products";
+import WhyUs from "@/components/home/WhyUs";
 
 export default function Home() {
   return (
@@ -20,7 +23,11 @@ export default function Home() {
 
       <Hero />
       <About/>
+      <HeroAbout/>
+
       <Products/>
+      <HeroWhyUs />
+      <WhyUs />
 <ImpactSteps/>
 <ContactUs/>
 
