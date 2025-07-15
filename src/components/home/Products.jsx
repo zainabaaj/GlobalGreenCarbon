@@ -191,6 +191,26 @@ export default function Products() {
             </div>
           ))}
         </div>
+         {/* Technology in Action - Video */}
+         <div className="my-20 text-center">
+          <h3 className="text-3xl font-semibold text-green-800 dark:text-green-400 mb-6">
+            Technology in Action: Block Press Machine
+          </h3>
+          <p className="max-w-3xl mx-auto mb-8 text-gray-700 dark:text-gray-300 text-lg">
+            Witness our advanced press machine producing high-quality, carbon-negative hempcrete blocks. This state-of-the-art equipment ensures consistency, durability, and sustainability in every block we create.
+          </p>
+          <div className="mx-auto max-w-4xl rounded-md overflow-hidden shadow-lg">
+            <video
+              src="/videos/ggcblock.mp4"
+              controls
+              loop
+              muted
+              autoPlay
+              playsInline
+              className="w-full h-auto rounded-md"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

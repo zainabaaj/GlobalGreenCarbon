@@ -3,7 +3,7 @@ import Image from "next/image";
 import NextTopLoader from "nextjs-toploader";
 import dynamic from "next/dynamic";
 import { Toaster } from "sonner";
-
+import { Open_Sans } from "next/font/google";
 import "@/assets/css/style.css";
 
 const AppProvidersWrapper = dynamic(
@@ -17,6 +17,12 @@ const rem = REM({
   display: "swap",
   adjustFontFallback: false,
   subsets: ["latin"],
+});
+
+const openSansExtraBold = Open_Sans({
+  subsets: ["latin"],
+  weight: "800", // 800 = Extra Bold
+  display: "swap",
 });
 
 export const metadata = {
@@ -68,7 +74,7 @@ export default function RootLayout({ children }) {
         <style>{splashScreenStyles}</style>
       </head>
 
-      <body className={rem.className}>
+      <body className={openSansExtraBold.className}>
         <div id="splash-screen">
           <Image
             alt="Logo"

@@ -18,10 +18,10 @@ const Hero = () => {
                     <span className="rounded-md bg-white/10 px-3 py-1 text-sm font-medium uppercase tracking-wider text-white">
                       Explore Our Solutions
                     </span>
-                    <h1 className="mt-10 text-3xl font-medium text-white md:text-5xl/snug">
-                    Empowering the Planet with Carbon-Negative Innovation
+                    <h1 className="mt-10 text-4xl font-medium text-white md:text-5xl/snug ${openSans.className}">
+                    EMPOWERING THE PLANET WITH INDUSTRIAL HEMP
                     </h1>
-                    <p className="mx-auto mt-5 w-3/4 text-base text-white/80">
+                    <p className="mx-auto mt-5 w-3/4 text-xl text-white/80">
                       Revolutionizing sustainability with industrial hemp – renewable, regenerative, and ready for a better tomorrow.
                     </p>
                     <div className="mt-10 flex justify-center">

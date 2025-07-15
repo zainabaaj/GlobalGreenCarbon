@@ -41,7 +41,9 @@ const config = {
     },
 
     fontFamily: {
-      body: ["REM", "sans-serif"],
+      body: ["Open Sans", "sans-serif"],
+
+      opensans: ["'Open Sans'", "sans-serif"],
     },
 
     extend: {

@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
 
-import hemp1 from "@/assets/images/landing/hemp.jpg";
-import hemp4 from "@/assets/images/landing/hemp2.jpg";
+import hemp1 from "@/assets/images/landing/hempbales.webp";
+import hemp4 from "@/assets/images/landing/hempharvest.jpg";
 // import pressMachineVideo from "@/assets/images/landing/ggcblock.mp4";
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
 
         {/* Image + Story Split */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
-          <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-md">
+          <div className="relative w-full h-96 rounded-md overflow-hidden shadow-md">
             <Image
               src={hemp1}
               alt="Hemp Field"
@@ -58,7 +58,7 @@ const About = () => {
               collaboration.
             </p>
           </div>
-          <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-md">
+          <div className="relative w-full h-96 rounded-md overflow-hidden shadow-md">
             <Image
               src={hemp4}
               alt="Industrial Hemp"
@@ -68,26 +68,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Technology in Action - Video */}
-        <div className="mb-20 text-center">
-          <h3 className="text-3xl font-semibold text-green-800 dark:text-green-400 mb-6">
-            Technology in Action: Block Press Machine
-          </h3>
-          <p className="max-w-3xl mx-auto mb-8 text-gray-700 dark:text-gray-300 text-lg">
-            Witness our advanced press machine producing high-quality, carbon-negative hempcrete blocks. This state-of-the-art equipment ensures consistency, durability, and sustainability in every block we create.
-          </p>
-          <div className="mx-auto max-w-4xl rounded-xl overflow-hidden shadow-lg">
-            <video
-              src="/videos/ggcblock.mp4"
-              controls
-              loop
-              muted
-              autoPlay
-              playsInline
-              className="w-full h-auto rounded-xl"
-            />
-          </div>
-        </div>
+       
 
 
         {/* CTA */}
