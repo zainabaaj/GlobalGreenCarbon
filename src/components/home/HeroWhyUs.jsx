@@ -1,4 +1,4 @@
-import hemp from "@/assets/images/landing/hemphar.jpg";
+import hemp from "@/assets/images/landing/hempharmach.png";
 import { LuMoveRight } from "react-icons/lu";
 import Link from "next/link";
 
