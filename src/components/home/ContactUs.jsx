@@ -30,7 +30,7 @@ const ContactUs = () => {
             Contact Us
           </span>
           <h2 className="mt-4 text-4xl font-bold text-default-950 dark:text-white leading-tight">
-            Partner With Us for a Greener Future
+            Partner With Us for a Greener Future 
           </h2>
           <p className="mt-5 text-lg text-gray-700 dark:text-gray-300">
             Whether you&rsquo;re an industry leader, investor, innovator, or simply
