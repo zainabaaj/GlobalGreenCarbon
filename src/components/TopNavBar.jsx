@@ -72,7 +72,7 @@ const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
                     src={logoDark}
                     alt="logo"
                     height={60}
-                    width={60}
+                    width={50}
                     className="flex h-12 dark:hidden"
                   />
                   <Image

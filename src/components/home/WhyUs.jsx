@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import carbonCaptureImg from "@/assets/images/landing/field3.jpg";
+import carbonCaptureImg from "@/assets/images/landing/field5.jpg";
 import versatilityImg from "@/assets/images/landing/factory.jpg";
 import scalingImg from "@/assets/images/landing/farm.jpg";
 
@@ -53,7 +53,7 @@ const sections = [
 const WhyUs = () => {
   return (
     <section id="why-us" className="bg-[#f9f5f0] dark:bg-gray-950 py-20">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6 ">
         {/* Section Header */}
         <span className="inline-block rounded-md border border-green-600 bg-green-100 dark:bg-green-900/20 px-4 py-1 text-sm font-medium uppercase tracking-wider text-green-700 dark:text-green-400">
           Why Hemp?
@@ -64,12 +64,12 @@ const WhyUs = () => {
 
         {/* Sections */}
         {sections.map(({ id, title, image, content }) => (
-          <div key={id} className="mb-20 max-w-4xl mx-auto text-center">
+          <div key={id} className="mb-20 max-w-4xl mx-auto ">
             <div className="relative w-full h-64 rounded-md overflow-hidden shadow-md mb-8">
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
-            <h3 className="text-3xl font-semibold text-green-800 dark:text-green-400 mb-6">{title}</h3>
-            <p className="text-gray-700 text-center dark:text-gray-300 text-lg font-nunito leading-loose ">
+            <h3 className="text-3xl font-semibold text-green-800 text-center dark:text-green-400 mb-6">{title}</h3>
+            <p className="text-gray-700  dark:text-gray-300 text-lg font-nunito leading-loose ">
               {content.trim()}
             </p>
           </div>
