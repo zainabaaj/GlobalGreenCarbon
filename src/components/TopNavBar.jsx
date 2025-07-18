@@ -63,24 +63,24 @@ const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
         "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-beige/70 transition-all duration-300 dark:bg-default-50/70 lg:bg-transparent [&.nav-sticky]:bg--beige/70 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-50/80"
       )}
       >
-        <div className="flex h-full items-center py-4">
+        <div className="flex h-full items-center py-1">
           <div className="container">
             <nav className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
-              <div className="flex w-full items-center justify-between lg:w-auto">
+              <div className="flex w-full items-center justify-between lg:w-auto ">
                 <Link href="/">
                   <Image
                     src={logoDark}
                     alt="logo"
-                    height={100}
-                    width={100}
-                    className="flex h-24 dark:hidden"
+                    height={200}
+                    width={150}
+                    className="flex h-32 dark:hidden"
                   />
                   <Image
                     src={logoLight}
                     alt="logo"
-                    height={100}
-                    width={100}
-                    className="hidden h-24 dark:flex"
+                    height={200}
+                    width={150}
+                    className="hidden h-28 dark:flex"
                   />
                 </Link>
                 
@@ -122,16 +122,16 @@ const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
             <Image
               src={logoDark}
               alt="logo"
-              height={40}
-              width={147}
-              className="flex h-10 dark:hidden"
+              height={100}
+              width={200}
+              className="flex h-24 dark:hidden"
             />
             <Image
               src={logoLight}
               alt="logo"
-              height={40}
-              width={147}
-              className="hidden h-10 dark:flex"
+              height={100}
+              width={200}
+              className="hidden h-24 dark:flex"
             />
           </Link>
           <div data-hs-overlay="#mobile-menu" className="hs-collapse-toggle">

@@ -11,7 +11,47 @@
 //   LuSunMoon,
 //   LuUser2,
 // } from "react-icons/lu";
-
+const faqContent = [
+    {
+      title:
+        " What types of biochar does Global Green Carbon produce, and who uses it?",
+      description:
+        "We produce high-quality biochar derived from industrial hemp biomass through our state of the art controlled pyrolysis system. Our biochar meets international standards for carbon removal and is used in agriculture, soil remediation, green cement and construction materials and water filtration. It is also certified under leading carbon credit frameworks, including Puro Earth CORCs (Carbon Removal Certificates).",
+    },
+    {
+      title: "Can I purchase hemp-based materials from your projects (e.g. fiber, hurd, or seed oil)?",
+      description:
+        "Yes. We offer hemp fiber for use in textiles and bioplastics, hurd for hempcrete and insulation, and hemp seed and oil for industrial and nutritional applications all in bulk volume. We welcome expressions of interest from offtakers across construction, packaging, agriculture, and sustainable consumer goods sectors. It’s a great way for companies to reduce carbon emissions within their operations.",
+    },
+    {
+      title: "Why is industrial hemp considered one of the most powerful climate-smart crops?",
+      description:
+        "Industrial hemp stands out for its exceptional carbon capture, short growth cycle, and regenerative impact. It can be planted and harvested up to three times per year, absorbs large amounts of CO₂, and helps restore degraded soils. Unlike slower-growing crops or forest-based systems, hemp delivers rapid biomass yields while also producing valuable materials like fiber, seed oil, and biochar. This makes it uniquely suited for scalable, high-integrity carbon removal and sustainable product development.",
+    },
+    {
+      title:
+        " How much carbon does hemp absorb, and what does that mean in real terms?",
+      description:
+       `
+        A well-managed <strong>2,000-hectare industrial hemp project</strong> can remove approximately <strong>324,000 tonnes of CO₂</strong> from the atmosphere every year — <em>that’s equivalent to taking over 70,000 cars off the road annually</em>.<br/><br/>
+        Additionally:
+        <ul>
+          <li>1 acre of hemp produces as much fiber as <strong>5 acres of trees</strong></li>
+          <li>It grows from seed to harvest in just <strong>100 days</strong>, compared to 20+ years for trees</li>
+        </ul>
+      `,
+    },
+    {
+        title: "How do I verify that the carbon credits or materials I buy are sustainable and traceable?",
+        description:
+          "We use a cutting edge carbon blockchain-integrated monitoring system to track every hectare of hemp grown, every tonne of biochar produced, and every carbon credit issued. All credits are third-party verified under Puro.earth, the world’s leading registry for durable engineered carbon removal. Puro credits are known for their scientific integrity, permanence, and transparency. Buyers receive full traceability on biomass origin, processing data, and end-use application — ensuring confidence in climate impact and supply chain sustainability.",
+      },
+      {
+        title: "What other environmental or social benefits do your projects deliver?",
+        description:
+          "Beyond carbon removal, Global Green Carbon’s hemp-based projects generate wide-reaching co-benefits. Hemp helps restore degraded soils, reduces erosion, and increases biodiversity by breaking monoculture cycles. It also creates local employment opportunities through cultivation, harvesting, processing, and pyrolysis operations — especially in rural and post-mining communities. These co-benefits are documented and transparently reported alongside carbon outcomes, offering holistic impact for both nature and people.",
+      },
+  ];
 // import tailwind from "@/assets/images/demo/logo/tailwindcss.svg";
 // import html5 from "@/assets/images/demo/logo/html.svg";
 // import css3 from "@/assets/images/demo/logo/css.svg";
@@ -317,4 +357,4 @@
 //   },
 // ];
 
-// export { developmentTools, landingDemos, adminDemos, allFeatures, authDemos };
+ export {faqContent };

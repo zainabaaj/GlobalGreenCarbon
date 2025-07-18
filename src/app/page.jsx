@@ -11,6 +11,7 @@ import {
 
 } from "@/components/home";
 import ContactUs from "@/components/home/ContactUs";
+import FAQs from "@/components/home/FAQs";
 import HeroAbout from "@/components/home/HeroAbout";
 import HeroWhyUs from "@/components/home/HeroWhyUs";
 import Products from "@/components/home/Products";
@@ -29,6 +30,7 @@ export default function Home() {
       <HeroWhyUs />
       <WhyUs />
 <ImpactSteps/>
+<FAQs/>
 <ContactUs/>
 
 

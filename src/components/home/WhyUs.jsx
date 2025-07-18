@@ -59,17 +59,17 @@ const WhyUs = () => {
           Why Hemp?
         </span>
         <h2 className="mt-4 text-5xl font-bold text-gray-900 dark:text-white leading-tight max-w-3xl mx-auto mb-12">
-          Hemp: Nature’s Solution for a Sustainable Future
+          Hemp: Nature&apos;s Solution for a Sustainable Future
         </h2>
 
         {/* Sections */}
         {sections.map(({ id, title, image, content }) => (
-          <div key={id} className="mb-20 max-w-4xl mx-auto text-left">
+          <div key={id} className="mb-20 max-w-4xl mx-auto text-center">
             <div className="relative w-full h-64 rounded-md overflow-hidden shadow-md mb-8">
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
             <h3 className="text-3xl font-semibold text-green-800 dark:text-green-400 mb-6">{title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-lg text-justify whitespace-pre-line">
+            <p className="text-gray-700 text-center dark:text-gray-300 text-lg font-nunito leading-loose ">
               {content.trim()}
             </p>
           </div>

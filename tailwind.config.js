@@ -44,6 +44,7 @@ const config = {
       body: ["Open Sans", "sans-serif"],
 
       opensans: ["'Open Sans'", "sans-serif"],
+      nunito: ["Nunito", "sans-serif"],
     },
 
     extend: {

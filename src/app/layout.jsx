@@ -1,4 +1,5 @@
 import { REM } from "next/font/google";
+import { Nunito } from "next/font/google";
 import Image from "next/image";
 import NextTopLoader from "nextjs-toploader";
 import dynamic from "next/dynamic";

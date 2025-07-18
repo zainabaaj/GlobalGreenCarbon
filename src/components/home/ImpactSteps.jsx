@@ -1,7 +1,7 @@
 import { LuPlay } from "react-icons/lu";
 import { FaLeaf, FaCogs, FaGlobe } from "react-icons/fa";
 import Image from "next/image";
-import logoDark from "@/assets/images/logo-sm.png";
+import logoDark from "@/assets/images/logo-circle.png";
 import bg from "@/assets/images/landing/bg.jpg";
 
 const impactSteps = [
@@ -83,8 +83,8 @@ const ImpactSteps = () => {
                     src={logoDark}
                     alt="logo"
                     height={100}
-                    width={100}
-                    className="flex h-24 "
+                    width={150}
+                    className="flex h-32 "
                   />
                 </button>
               </div>
