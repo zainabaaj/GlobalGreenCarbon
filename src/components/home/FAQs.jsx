@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const FAQs = () => {
   return (
-    <section className="py-10 lg:py-20" id="faq">
+    <section className="py-10 lg:py-20" id="FAQs">
       <div className="container">
         <div className="mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">

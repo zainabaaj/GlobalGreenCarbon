@@ -20,7 +20,7 @@ import WhyUs from "@/components/home/WhyUs";
 export default function Home() {
   return (
     <>
-      <TopNavBar menuItems={["Home", "Products", "Contact Us"]} position="fixed" />
+      <TopNavBar menuItems={["Home", "Products","FAQs", "Contact Us"]} position="fixed" />
 
       <Hero />
       <About/>

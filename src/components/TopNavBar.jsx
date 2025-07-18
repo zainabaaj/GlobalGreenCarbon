@@ -8,8 +8,8 @@ import { useEffect, useRef, useState } from "react";
 import { LuChevronDown, LuDownloadCloud, LuMenu, LuX } from "react-icons/lu";
 import { landingPages } from "@/assets/data";
 
-import logoDark from "@/assets/images/logo-dark.png";
-import logoLight from "@/assets/images/logo-light.png";
+import logoDark from "@/assets/images/logo-circle.png";
+import logoLight from "@/assets/images/logo-circle.png";
 
 const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
   const navbarRef = useRef(null);
@@ -71,19 +71,19 @@ const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
                   <Image
                     src={logoDark}
                     alt="logo"
-                    height={200}
-                    width={150}
-                    className="flex h-32 dark:hidden"
+                    height={60}
+                    width={60}
+                    className="flex h-12 dark:hidden"
                   />
                   <Image
                     src={logoLight}
                     alt="logo"
-                    height={200}
-                    width={150}
-                    className="hidden h-28 dark:flex"
+                    height={50}
+                    width={50}
+                    className="hidden h-12 dark:flex"
                   />
                 </Link>
-                
+                <p className="px-2">Global Green Carbon</p>
               </div>
               <ul className="menu relative mx-auto hidden grow items-center justify-center lg:flex">
                 {menuItems.map((item, idx) => {
