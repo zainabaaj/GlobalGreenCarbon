@@ -1,5 +1,5 @@
-import creative2 from "@/assets/images/landing/hemp.jpg";
-import creative7 from "@/assets/images/landing/hemp.jpg";
+import creative2 from "@/assets/images/landing/faq3.jpg";
+import creative7 from "@/assets/images/landing/faq1.jpg";
 import { faqContent } from "./data";
 import { LuChevronUp, LuHelpCircle } from "react-icons/lu";
 import { cn } from "@/utils";

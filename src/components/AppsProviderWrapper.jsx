@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const handleChangeTitle = () => {
   if (document.visibilityState == "hidden")
-    document.title = "Please come back :-(";
+    document.title = "GGC";
   else
     document.title =
       "Global Green Carbon - Empowering The Planet With Industrial Hemp";
