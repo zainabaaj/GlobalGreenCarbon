@@ -1,59 +1,74 @@
+
 "use client";
-import TextFormInput from "@/components/form/TextFormInput";
-import TextAreaFormInput from "@/components/form/TextAreaFormInput";
+
+import { LuMoveRight } from "react-icons/lu";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { LuSend } from "react-icons/lu";
 import * as yup from "yup";
+import TextFormInput from "@/components/form/TextFormInput";
+import TextAreaFormInput from "@/components/form/TextAreaFormInput";
 
 const ContactUs = () => {
   const contactFormSchema = yup.object({
-    name: yup.string().required("Please enter your name"),
     email: yup
       .string()
       .email("Please enter a valid email")
-      .required("Please enter your email"),
-    subject: yup.string().required("Please enter your subject"),
-    message: yup.string().required("Please enter your message"),
+      .required("Please enter your email address"),
+    name: yup.string().required("Please enter your name"),
+    subject: yup.string().required("Please enter a subject"),
+    requirement: yup.string().required("Please describe your needs"),
   });
 
-  const { control, handleSubmit } = useForm({
+  const { control, handleSubmit, reset } = useForm({
     resolver: yupResolver(contactFormSchema),
   });
 
-  return (
-    <section id="Contact Us" className="py-20 bg-[#f9f5f0] dark:bg-gray-950">
-      <div className="container">
-        {/* Section Header */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <span className="rounded-md border border-green-600 bg-green-100 dark:bg-green-900/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-green-700 dark:text-green-400">
-            Contact Us
-          </span>
-          <h2 className="mt-4 text-4xl font-bold text-default-950 dark:text-white leading-tight">
-            Partner With Us for a Greener Future 
-          </h2>
-          <p className="mt-5 text-lg text-gray-700 dark:text-gray-300">
-            Whether you&rsquo;re an industry leader, investor, innovator, or simply
-            someone passionate about sustainability — we want to hear from you.
-            Reach out today to explore how Global Green Carbon can help drive
-            your carbon-negative initiatives.
-          </p>
-        </div>
+  const handleFormSubmit = async (data) => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-        {/* Contact Form */}
-        <div className="mx-auto max-w-4xl">
-          <div className="rounded-md border border-default-300  p-8 dark:bg-default-50">
-            <form onSubmit={handleSubmit(() => {})} className="relative">
-              <h2 className="mb-5 text-2xl font-semibold text-default-950 dark:text-white">
-                Send Us a Message
-              </h2>
-              <div className="grid gap-6 sm:grid-cols-2">
+      if (res.ok) {
+        alert("Your message has been sent successfully!");
+        reset();
+      } else {
+        alert("There was an error sending your message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred, please try again.");
+    }
+  };
+
+  return (
+    <section id="Contact Us"
+      className="bg-default-100 bg-[url('../images/other/bg-lines-2.png')] bg-cover bg-no-repeat py-10 dark:bg-default-50 dark:bg-[url('../images/other/bg-lines-2-dark.png')] lg:py-20"
+    >
+      <div className="container">
+        <div className="grid grid-cols-1 items-center gap-6 xl:grid-cols-2">
+          <div>
+            <h2 className="text-3xl font-medium text-default-950 md:text-4xl">
+              We help you gain a competitive advantage
+            </h2>
+            <p className="my-5 text-base font-medium text-default-600">
+              Contact Yurtenpack to share your needs.
+            </p>
+          </div>
+          <div className="rounded-lg p-8">
+            <div className="rounded-md bg-white p-6 dark:bg-default-100">
+              <h3 className="text-2xl font-medium text-default-950">
+                Don&apos;t hesitate to contact us!
+              </h3>
+              <form onSubmit={handleSubmit(handleFormSubmit)} className="mt-6 space-y-4">
                 <TextFormInput
                   name="name"
-                  label="Name"
-                  labelClassName="text-default-500"
-                  className="text-sm"
-                  placeholder="Your full name"
+                  label="Your Name"
+                  labelClassName="text-default-950"
+                  className="h-12 rounded py-4 ps-4 text-default-950 dark:bg-default-50"
+                  placeholder="Enter your name"
                   control={control}
                   fullWidth
                 />
@@ -61,46 +76,39 @@ const ContactUs = () => {
                   name="email"
                   label="Email"
                   type="email"
-                  labelClassName="text-default-500"
-                  className="text-sm"
-                  placeholder="your@email.com"
+                  labelClassName="text-default-950"
+                  className="h-12 rounded py-4 ps-4 text-default-950 dark:bg-default-50"
+                  placeholder="Enter your email address"
                   control={control}
                   fullWidth
                 />
-                <div className="sm:col-span-2">
-                  <TextFormInput
-                    name="subject"
-                    label="Subject"
-                    labelClassName="text-default-500"
-                    className="text-sm"
-                    placeholder="What would you like to discuss?"
-                    control={control}
-                    containerClassName="mb-3"
-                    fullWidth
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <TextAreaFormInput
-                    name="message"
-                    label="Message"
-                    labelClassName="text-default-500"
-                    className="text-sm"
-                    rows={4}
-                    placeholder="Tell us how we can collaborate..."
-                    containerClassName="mb-4"
-                    control={control}
-                    fullWidth
-                  />
-                </div>
-              </div>
-              <button
-                type="submit"
-                className="mt-4 flex items-center rounded-md bg-green-700 px-6 py-2 text-white transition-all hover:bg-green-800"
-              >
-                Send Message
-                <LuSend className="ms-2 size-5 rotate-45" />
-              </button>
-            </form>
+                <TextFormInput
+                  name="subject"
+                  label="Subject"
+                  labelClassName="text-default-950"
+                  className="h-12 rounded py-4 ps-4 text-default-950 dark:bg-default-50"
+                  placeholder="Subject of your message"
+                  control={control}
+                  fullWidth
+                />
+                <TextAreaFormInput
+                  name="requirement"
+                  label="Your Needs"
+                  labelClassName="text-default-950"
+                  className="rounded py-4 px-4 text-default-950 dark:bg-default-50"
+                  placeholder="Please write your requests or questions"
+                  rows={4}
+                  control={control}
+                  fullWidth
+                />
+                <button
+                  type="submit"
+                  className="rounded bg-primary px-6 py-2 text-lg text-white"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
