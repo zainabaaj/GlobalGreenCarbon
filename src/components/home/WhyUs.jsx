@@ -69,7 +69,7 @@ const WhyUs = () => {
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
             <h3 className="text-3xl font-semibold text-green-800 text-center dark:text-green-400 mb-6">{title}</h3>
-            <p className="text-gray-700  dark:text-gray-300 text-lg font-nunito leading-loose ">
+            <p className="text-gray-700 text-left dark:text-gray-300 text-lg font-nunito leading-loose ">
               {content.trim()}
             </p>
           </div>
