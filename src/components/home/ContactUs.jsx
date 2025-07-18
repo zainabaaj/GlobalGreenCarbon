@@ -51,10 +51,10 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 items-center gap-6 xl:grid-cols-2">
           <div>
             <h2 className="text-3xl font-medium text-default-950 md:text-4xl">
-              We help you gain a competitive advantage
+            Partner with us for climate-smart solutions
             </h2>
             <p className="my-5 text-base font-medium text-default-600">
-              Contact Yurtenpack to share your needs.
+            Get in touch with Global Green Carbon to explore biochar, carbon removal, and sustainable materials tailored to your goals.
             </p>
           </div>
           <div className="rounded-lg p-8">
