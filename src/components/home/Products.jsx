@@ -98,7 +98,7 @@ export default function Products() {
               <p className="text-base font-medium text-gray-800 dark:text-gray-200 mb-2">
                 {product.shortDesc}
               </p>
-              <p className="text-lg font-nunito text-gray-700 dark:text-gray-300 leading-loose">
+              <p className="text-lg font-poppins font-extralight text-gray-700 dark:text-gray-300 leading-loose">
                 {product.description}
               </p>
             </div>

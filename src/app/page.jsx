@@ -1,11 +1,7 @@
 import TopNavBar from "@/components/TopNavBar";
 import {
-  AdminDemos,
   Hero,
-  LandingDemos,
-  SecurityDemos,
   Footer,
-  Features,
   About,
   ImpactSteps,
 
@@ -29,9 +25,9 @@ export default function Home() {
       <Products/>
       <HeroWhyUs />
       <WhyUs />
-<ImpactSteps/>
-<FAQs/>
-<ContactUs/>
+      <ImpactSteps/>
+      <FAQs/>
+      <ContactUs/>
 
 
 

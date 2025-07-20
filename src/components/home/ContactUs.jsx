@@ -53,7 +53,7 @@ const ContactUs = () => {
             <h2 className="text-3xl font-medium text-default-950 md:text-4xl">
             Partner with us for climate-smart solutions
             </h2>
-            <p className="my-5 text-base font-medium text-default-600">
+            <p className="my-5 text-base font-medium font-poppins font-extralight text-default-600">
             Get in touch with Global Green Carbon to explore biochar, carbon removal, and sustainable materials tailored to your goals.
             </p>
           </div>

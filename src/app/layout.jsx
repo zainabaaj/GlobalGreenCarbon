@@ -1,5 +1,6 @@
 import { REM } from "next/font/google";
 import { Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Image from "next/image";
 import NextTopLoader from "nextjs-toploader";
 import dynamic from "next/dynamic";
@@ -19,7 +20,21 @@ const rem = REM({
   adjustFontFallback: false,
   subsets: ["latin"],
 });
+const nunito = Nunito({
+  weight: ["200", "300", "400", "500", "600", "700"],
+  display: "swap",
+  adjustFontFallback: false,
+  variable: "--font-nunito",
+  subsets: ["latin"],
+});
 
+const poppins = Poppins({
+  weight: ["200", "300", "400", "500", "600", "700"],
+  display: "swap",
+    variable: "--font-poppins",
+
+  subsets: ["latin"],
+});
 const openSansExtraBold = Open_Sans({
   subsets: ["latin"],
   weight: "800", // 800 = Extra Bold
@@ -75,7 +90,7 @@ export default function RootLayout({ children }) {
         <style>{splashScreenStyles}</style>
       </head>
 
-      <body className={openSansExtraBold.className}>
+      <body className={`${openSansExtraBold.className}  ${nunito.variable} ${poppins.variable}`}>
         <div id="splash-screen">
           <Image
             alt="Logo"

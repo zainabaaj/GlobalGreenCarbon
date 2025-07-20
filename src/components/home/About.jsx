@@ -18,7 +18,7 @@ const About = () => {
           <h2 className="mt-4 text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Building a Carbon-Negative Future with Hemp Innovation
           </h2>
-          <p className="mt-6 max-w-4xl mx-auto text-lg text-gray-700 dark:text-gray-300 font-nunito leading-relaxed">
+          <p className="mt-6 max-w-4xl mx-auto text-lg text-gray-700 dark:text-gray-300 font-poppins font-extralight leading-relaxed">
             Global Green Carbon is a sustainability-driven company pioneering advancements in
             renewable, carbon-negative materials. Through industrial hemp, we develop scalable
             solutions for energy, climate resilience, and global environmental regeneration.
@@ -38,7 +38,7 @@ const About = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-green-800 dark:text-green-400 mb-4">Our Vision</h3>
-            <p className="text-lg text-gray-700 dark:text-gray-300 font-nunito leading-relaxed">
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-poppins font-extralight leading-relaxed">
               We aim to lead the global transition toward carbon-negative industries using regenerative
               hemp ecosystems. Our work aligns environmental responsibility with commercial scale —
               offering sustainable alternatives for energy, materials, and wellness, while capturing and
@@ -51,7 +51,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
           <div>
             <h3 className="text-2xl font-semibold text-green-800 dark:text-green-400 mb-4">What Drives Us</h3>
-            <p className="text-lg text-gray-700 dark:text-gray-300 font-nunito leading-relaxed ">
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-poppins font-extralight leading-relaxed ">
               At Global Green Carbon, we believe that sustainability must scale — and fast. Our farms,
               technologies, and teams are built to meet real-world demand while restoring the planet’s
               natural balance. Every initiative is guided by circularity, transparency, and global

@@ -77,7 +77,7 @@ const FAQs = () => {
                       >
                         <div className="px-6 pb-4 pt-0">
                         <div
-                          className="mb-2 text-sm font-nunito leading-relaxed space-y-2"
+                          className="mb-2 text-sm font-poppins font-extralight leading-relaxed space-y-2"
                           dangerouslySetInnerHTML={{ __html: faq.description }}
 
                         ></div>

@@ -1,6 +1,6 @@
 import colors from "tailwindcss/colors";
 import { createThemes } from "tw-colors";
-
+import { Poppins } from "next/font/google";
 const config = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -45,6 +45,7 @@ const config = {
 
       opensans: ["'Open Sans'", "sans-serif"],
       nunito: ["Nunito", "sans-serif"],
+      poppins: ["Poppins","sans-serif"],
     },
 
     extend: {
