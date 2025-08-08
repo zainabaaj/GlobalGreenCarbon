@@ -42,7 +42,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'daniel@globalgreencarbon.com.au',
+      to: 'zainabaaj@gmail.com',
       subject: `GCC Inquiry: ${subject}`,
       text: `
 New Inquiry from GCC Website:
