@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "Coderthemes",
-    "url": "https://coderthemes.com/"
+    "name": "GGC",
+    "url": "https://globalgreencarbon.com.au/"
   },
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
+    "build": "next build ",
     "start": "next start",
     "lint": "next lint"
   },
@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
     "react-icons": "^5.0.1",
+    "sharp": "^0.34.3",
     "sonner": "^1.4.0",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.2.1",

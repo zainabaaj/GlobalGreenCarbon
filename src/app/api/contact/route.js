@@ -31,8 +31,7 @@ const transporter = nodemailer.createTransport({
   connectionTimeout: 10000,
   agent: httpsAgent,
 });
-console.log("immm innnn");
-console.log("immm innnn");console.log("immm innnn");console.log("immm innnn");
+
 // ✅ Route Handler (used instead of req/res in /app)
 export async function POST(request) {
   try {
