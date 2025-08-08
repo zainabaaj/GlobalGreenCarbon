@@ -1,14 +1,6 @@
-// app/api/contact/route.js
-
 import nodemailer from 'nodemailer';
 import https from 'https';
 import crypto from 'crypto';
-// import dotenv from 'dotenv';
-
-
-// dotenv.config();
-
-// No dotenv.config() in app directory routes – use `.env.local` and ensure variables are loaded at build time
 
 const httpsAgent = new https.Agent({
   secureOptions:
@@ -17,13 +9,12 @@ const httpsAgent = new https.Agent({
 });
 
 const transporter = nodemailer.createTransport({
-  
   service: 'gmail',
-  port: parseInt(process.env.EMAIL_PORT || '443', 10),
-  secure: process.env.EMAIL_SECURE === 'true',
+  port: parseInt(process.env.EMAIL_PORT || '465', 10), // use 465 by default for SSL
+  secure: process.env.EMAIL_SECURE === 'true',         // true for port 465
   auth: {
     user: process.env.EMAIL_USER,
-    pass:  process.env.EMAIL_PASS,
+    pass: process.env.EMAIL_PASS,
   },
   tls: {
     rejectUnauthorized: false,
@@ -32,7 +23,6 @@ const transporter = nodemailer.createTransport({
   agent: httpsAgent,
 });
 
-// ✅ Route Handler (used instead of req/res in /app)
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -42,7 +32,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'zainabaaj@gmail.com',
+      to: 'info@eviez.com.tr',  // update if you want another recipient for GlobalGreenCarbon
       subject: `GCC Inquiry: ${subject}`,
       text: `
 New Inquiry from GCC Website:
@@ -56,11 +46,16 @@ ${requirement}
     };
 
     await transporter.sendMail(mailOptions);
-console.log(process.env.EMAIL_USER)
 
-    return new Response(JSON.stringify({ message: 'Email sent successfully' }), { status: 200 });
+    return new Response(JSON.stringify({ message: 'Email sent successfully' }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (error) {
     console.error('❌ Error sending email:', error);
-    return new Response(JSON.stringify({ message: 'Failed to send email' }), { status: 500 });
+    return new Response(JSON.stringify({ message: 'Failed to send email' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
