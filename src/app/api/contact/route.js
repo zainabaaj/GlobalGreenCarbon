@@ -36,7 +36,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, email, subject, message } = body;
+    const { name, email, subject, requirement } = body;
 
     console.log("📬 New email submission received");
 
@@ -51,7 +51,7 @@ Name: ${name}
 Email: ${email}
 Subject: ${subject}
 Message:
-${message}
+${requirement}
       `,
     };
 
