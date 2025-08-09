@@ -11,12 +11,13 @@ const httpsAgent = new https.Agent({
 const transporter = nodemailer.createTransport({
   service: 'gmail',
 
-  port: parseInt(process.env.EMAIL_PORT || '443', 10), // use 465 by default for SSL
+  port: parseInt(process.env.EMAIL_PORT || '443', 10), 
 
-  secure: process.env.EMAIL_SECURE === 'true',         // true for port 465
+  secure: process.env.EMAIL_SECURE === 'true',      
+  
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    pass: 'mqxddbuppmubqnev',
   },
   tls: {
     rejectUnauthorized: false,
@@ -33,7 +34,7 @@ export async function POST(request) {
     console.log("📬 New email submission received");
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: "globalgreencarbon8@gmail.com",
       to: 'info@eviez.com.tr',  // update if you want another recipient for GlobalGreenCarbon
       subject: `GCC Inquiry: ${subject}`,
       text: `
