@@ -10,7 +10,9 @@ const httpsAgent = new https.Agent({
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+
   port: parseInt(process.env.EMAIL_PORT || '443', 10), // use 465 by default for SSL
+
   secure: process.env.EMAIL_SECURE === 'true',         // true for port 465
   auth: {
     user: process.env.EMAIL_USER,
